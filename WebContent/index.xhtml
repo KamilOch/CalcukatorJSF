@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Kalkulator JSF</title>
+</h:head>
+<h:body>
+	<h:form>
+		<table>
+			<tr>
+				<td colspan="3"><h:inputText value="#{calcK.value}" /></td>
+				<td><h:commandButton value="C" action="#{calcK.caclulate('C')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="S" action="#{calcK.caclulate('C')}">
+					</h:commandButton></td>
+			</tr>
+
+			<tr>
+				<td><h:commandButton value="7" action="#{calcK.caclulate('7')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="8" action="#{calcK.caclulate('8')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="9" action="#{calcK.caclulate('9')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="/" action="#{calcK.caclulate('/')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="&radic;"
+						action="#{calcK.caclulate('sqrt')}">
+					</h:commandButton></td>
+			</tr>
+
+			<tr>
+				<td><h:commandButton value="4" action="#{calcK.caclulate('4')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="5" action="#{calcK.caclulate('5')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="6" action="#{calcK.caclulate('6')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="*" action="#{calcK.caclulate('*')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="%" action="#{calcK.caclulate('%')}">
+					</h:commandButton></td>
+			</tr>
+
+			<tr>
+				<td><h:commandButton value="1" action="#{calcK.caclulate('1')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="2" action="#{calcK.caclulate('2')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="3" action="#{calcK.caclulate('3')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="-" action="#{calcK.caclulate('-')}">
+					</h:commandButton></td>
+				<td rowspan="2"><h:commandButton value="="
+						action="#{calcK.caclulate('=')}">
+					</h:commandButton></td>
+			</tr>
+
+			<tr>
+				<td><h:commandButton value="0" action="#{calcK.caclulate('0')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="." action="#{calcK.caclulate('.')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="+/-"
+						action="#{calcK.caclulate('+/-')}">
+					</h:commandButton></td>
+				<td><h:commandButton value="+" action="#{calcK.caclulate('+')}">
+					</h:commandButton></td>
+			</tr>
+
+		</table>
+	</h:form>
+</h:body>
+</html>

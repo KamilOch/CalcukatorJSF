@@ -10,63 +10,63 @@
 	<h:form>
 		<table>
 			<tr>
-				<td colspan="3"><h:inputText value="#{calcK.value}" /></td>
+				<td colspan="3"><h:inputText value="#{calcK.value}" disabled='true'/></td>
 				<td><h:commandButton value="C" action="#{calcK.caclulate('C')}">
 					</h:commandButton></td>
-				<td><h:commandButton value="S" action="#{calcK.caclulate('C')}">
+				<td><h:commandButton value="S" action="#{calcK.caclulate('C')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="7" action="#{calcK.caclulate('7')}">
+				<td><h:commandButton value="7" action="#{calcK.caclulate('7')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="8" action="#{calcK.caclulate('8')}">
+				<td><h:commandButton value="8" action="#{calcK.caclulate('8')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="9" action="#{calcK.caclulate('9')}">
+				<td><h:commandButton value="9" action="#{calcK.caclulate('9')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="/" action="#{calcK.caclulate('/')}">
+				<td><h:commandButton value="/" action="#{calcK.caclulate('/')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 				<td><h:commandButton value="&radic;"
-						action="#{calcK.caclulate('sqrt')}">
+						action="#{calcK.caclulate('sqrt')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="4" action="#{calcK.caclulate('4')}">
+				<td><h:commandButton value="4" action="#{calcK.caclulate('4')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="5" action="#{calcK.caclulate('5')}">
+				<td><h:commandButton value="5" action="#{calcK.caclulate('5')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="6" action="#{calcK.caclulate('6')}">
+				<td><h:commandButton value="6" action="#{calcK.caclulate('6')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="*" action="#{calcK.caclulate('*')}">
+				<td><h:commandButton value="*" action="#{calcK.caclulate('*')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="%" action="#{calcK.caclulate('%')}">
+				<td><h:commandButton value="%" action="#{calcK.caclulate('%')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="1" action="#{calcK.caclulate('1')}">
+				<td><h:commandButton value="1" action="#{calcK.caclulate('1')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="2" action="#{calcK.caclulate('2')}">
+				<td><h:commandButton value="2" action="#{calcK.caclulate('2')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="3" action="#{calcK.caclulate('3')}">
+				<td><h:commandButton value="3" action="#{calcK.caclulate('3')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="-" action="#{calcK.caclulate('-')}">
+				<td><h:commandButton value="-" action="#{calcK.caclulate('-')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 				<td rowspan="2"><h:commandButton value="="
-						action="#{calcK.caclulate('=')}">
+						action="#{calcK.caclulate('=')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="0" action="#{calcK.caclulate('0')}">
+				<td><h:commandButton value="0" action="#{calcK.caclulate('0')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="." action="#{calcK.caclulate('.')}">
+				<td><h:commandButton value="." action="#{calcK.caclulate('.')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 				<td><h:commandButton value="+/-"
-						action="#{calcK.caclulate('+/-')}">
+						action="#{calcK.caclulate('+/-')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="+" action="#{calcK.caclulate('+')}">
+				<td><h:commandButton value="+" action="#{calcK.caclulate('+')}" disabled="#{calcK.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 

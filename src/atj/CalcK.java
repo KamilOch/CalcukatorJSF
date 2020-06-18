@@ -10,18 +10,13 @@ import java.util.Locale;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.inject.Named;
 
-@Named
-@SessionScoped
-public class CalcK implements Serializable {
-
-	private static final long serialVersionUID = -3512401082776903678L;
-
-	@PostConstruct
-	public void initialize() {
-		System.out.println(CalcK.class.getSimpleName() + " was constructed");
-	}
+@ManagedBean(name = "calcK", eager = true)
+@RequestScoped
+public class CalcK {
 
 	private String value = "0";
 	private String firstNumber = "";

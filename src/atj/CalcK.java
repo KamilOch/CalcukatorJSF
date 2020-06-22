@@ -1,21 +1,17 @@
 package atj;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.inject.Named;
 
-@ManagedBean(name = "calcK", eager = true)
-@RequestScoped
+//@ManagedBean(name = "calcK", eager = true)
+////@RequestScoped
+//@SessionScoped
 public class CalcK {
 
 	private String value = "0";

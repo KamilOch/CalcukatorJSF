@@ -2,15 +2,54 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css" />
+
 <title>Config</title>
 </head>
 <body>
-	
-	
-	bean: #{calcConfig.message}
+
+	<h:form>
+		<h3>Wybierz kolor tła dla przycisków</h3>
+		<h:selectOneRadio required="true"
+			value="#{controller.calcConfigBean.displayColor}">
+			<f:selectItem itemValue="Sz" itemLabel="Szary" />
+			<f:selectItem itemValue="N" itemLabel="Niebieski" />
+		</h:selectOneRadio>
+
+		<h3>Wybierz kolor tła dla wyświetlacza</h3>
+		<h:selectOneRadio required="true"
+			value="#{controller.calcConfigBean.backgroundColor}">
+			<f:selectItem itemValue="Sz" itemLabel="Szary" />
+			<f:selectItem itemValue="N" itemLabel="Niebieski" />
+		</h:selectOneRadio>
+
+		<h:commandButton value="Submit" action="index" />
+	</h:form>
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
 
 </body>
 </html>

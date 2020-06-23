@@ -1,20 +1,33 @@
 package atj;
 
-
 public class CalcConfig {
 	
-	public String getMessage() {
-		return message;
+	private String displayColor;
+	private String backgroundColor;
+	
+	public CalcConfig() {
+		displayColor = "Sz";
+		backgroundColor = "Sz";
+	}
+	
+	public String getDisplayColor() {
+		return displayColor;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setDisplayColor(String displayColor) {
+		this.displayColor = displayColor;
 	}
 
-	private String message = "Hello Calc Config!";
+	public String getBackgroundColor() {
+		return backgroundColor;
+	}
 
+	public void setBackgroundColor(String backgroundColor) {
+		this.backgroundColor = backgroundColor;
+	}
 
 	
+
 //	public String config() {
 //	    return "config";  // Czyli idziemy do strony result.xhtml
 //	  }

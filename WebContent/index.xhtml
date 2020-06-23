@@ -23,100 +23,122 @@
 		<table>
 			<tr>
 				<td colspan="3"><h:inputText value="#{controller.value}"
-						class="form-control" disabled='true' /></td>
-				<td><h:commandButton value="C" class="btn btn-primary"
+						class="#{controller.calcConfigBean.backgroundColor eq 'N' ? 'btn btn-primary3' : 'btn btn-secondary3'}"
+						disabled='true' /></td>
+				<td><h:commandButton value="C"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('C')}">
 					</h:commandButton></td>
-				<td><h:commandButton value="S" class="btn btn-primary"
+				<td><h:commandButton value="S"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="config"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
-
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="7" class="btn btn-primary"
+				<td><h:commandButton value="7"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('7')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="8" class="btn btn-primary"
+
+				<td><h:commandButton value="8"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('8')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="9" class="btn btn-primary"
+				<td><h:commandButton value="9"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('9')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="/" class="btn btn-primary"
+				<td><h:commandButton value="/"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('/')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="&radic;" class="btn btn-primary"
+				<td><h:commandButton value="&radic;"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('sqrt')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="4" class="btn btn-primary"
+				<td><h:commandButton value="4"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('4')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="5" class="btn btn-primary"
+				<td><h:commandButton value="5"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('5')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="6" class="btn btn-primary"
+				<td><h:commandButton value="6"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('6')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="*" class="btn btn-primary"
+				<td><h:commandButton value="*"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('*')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="%" class="btn btn-primary"
+				<td><h:commandButton value="%"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('%')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="1" class="btn btn-primary"
+				<td><h:commandButton value="1"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('1')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="2" class="btn btn-primary"
+				<td><h:commandButton value="2"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('2')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="3" class="btn btn-primary"
+				<td><h:commandButton value="3"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('3')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="-" class="btn btn-primary"
+				<td><h:commandButton value="-"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('-')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 				<td rowspan="2"><h:commandButton value="="
-						class="btn btn-primary" action="#{controller.caclulate('=')}"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary2' : 'btn btn-secondary2'}"
+						action="#{controller.caclulate('=')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
 			</tr>
 
 			<tr>
-				<td><h:commandButton value="0" class="btn btn-primary"
+				<td><h:commandButton value="0"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('0')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="." class="btn btn-primary"
+				<td><h:commandButton value="."
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('.')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="+/-" class="btn btn-primary"
+				<td><h:commandButton value="+/-"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('+/-')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>
-				<td><h:commandButton value="+" class="btn btn-primary"
+				<td><h:commandButton value="+"
+						class="#{controller.calcConfigBean.displayColor eq 'N' ? 'btn btn-primary' : 'btn btn-secondary'}"
 						action="#{controller.caclulate('+')}"
 						disabled="#{controller.value eq 'ERR' ? 'true' : 'false'}">
 					</h:commandButton></td>

@@ -29,6 +29,13 @@
 			<f:selectItem itemValue="Sz" itemLabel="Szary" />
 			<f:selectItem itemValue="N" itemLabel="Niebieski" />
 		</h:selectOneRadio>
+		
+		<h3>Wybierz rodzaj czcionki</h3>
+		<h:selectOneRadio required="true"
+			value="#{controller.calcConfigBean.font}">
+			<f:selectItem itemValue="1" itemLabel="sans-serif" />
+			<f:selectItem itemValue="2" itemLabel="Arial (kursywa i podkreślenie)" />
+		</h:selectOneRadio>
 
 		<h:commandButton value="Submit" action="index" />
 	</h:form>

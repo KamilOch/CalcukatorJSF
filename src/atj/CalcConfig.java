@@ -1,13 +1,15 @@
 package atj;
 
 public class CalcConfig {
-	
+
 	private String displayColor;
 	private String backgroundColor;
+	private String font;
 	
 	public CalcConfig() {
 		displayColor = "Sz";
 		backgroundColor = "Sz";
+		font = "1";
 	}
 	
 	public String getDisplayColor() {
@@ -24,6 +26,14 @@ public class CalcConfig {
 
 	public void setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
+	}
+	
+	public String getFont() {
+		return font;
+	}
+
+	public void setFont(String font) {
+		this.font = font;
 	}
 
 	

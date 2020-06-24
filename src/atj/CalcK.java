@@ -9,9 +9,6 @@ import java.util.Locale;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
 
-//@ManagedBean(name = "calcK", eager = true)
-////@RequestScoped
-//@SessionScoped
 public class CalcK {
 
 	private String value = "0";

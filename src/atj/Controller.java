@@ -59,8 +59,4 @@ public class Controller implements Serializable {
 			calcKBean.caclulate(c);
 	}
 
-	public String config() {
-		return "config"; // Czyli idziemy do strony config.xhtml
-	}
-
 }

@@ -2,14 +2,18 @@ package atj;
 
 public class CalcConfig {
 
+
+
 	private String displayColor;
 	private String backgroundColor;
 	private String font;
+	private String fontColor;
 	
 	public CalcConfig() {
 		displayColor = "Sz";
 		backgroundColor = "Sz";
 		font = "1";
+		fontColor = "Sz";
 	}
 	
 	public String getDisplayColor() {
@@ -36,10 +40,13 @@ public class CalcConfig {
 		this.font = font;
 	}
 
-	
+	public String getFontColor() {
+		return fontColor;
+	}
 
-//	public String config() {
-//	    return "config";  // Czyli idziemy do strony result.xhtml
-//	  }
+	public void setFontColor(String fontColor) {
+		this.fontColor = fontColor;
+	}
+
 
 }
